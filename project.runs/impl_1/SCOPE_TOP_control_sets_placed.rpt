@@ -1,0 +1,100 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Sat Oct 24 00:31:25 2015
+| Host         : Mickey running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SCOPE_TOP_control_sets_placed.rpt
+| Design       : SCOPE_TOP
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    47 |
+| Minimum Number of register sites lost to control set restrictions |   202 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1463 |          518 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             286 |           83 |
+| Yes          | No                    | No                     |            1328 |          487 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              17 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+----------------------------------------------+-------------------------------------------+------------------+----------------+
+|              Clock Signal              |                 Enable Signal                |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------------------------------+----------------------------------------------+-------------------------------------------+------------------+----------------+
+|  disp1td/VGA_BLUE_reg[3]               |                                              |                                           |                1 |              1 |
+|  disp7t1/label_reg_i_2__3_n_0          |                                              |                                           |                1 |              1 |
+|  disp6v1/label_reg_i_2__8_n_0          |                                              |                                           |                1 |              1 |
+|  GEN_CLK_SYNTH_SQUARE/CLK_SYNTH_SQUARE |                                              |                                           |                1 |              1 |
+|  disp4t1/label_reg_i_2__10_n_0         |                                              |                                           |                1 |              1 |
+|  disp1v1/label_reg_i_2__11_n_0         |                                              |                                           |                1 |              1 |
+|  disp4v1/label_reg_i_2__7_n_0          |                                              |                                           |                1 |              1 |
+|  disp5t1/label_reg_i_2__2_n_0          |                                              |                                           |                1 |              1 |
+|  disp3v1/label_reg_i_2__6_n_0          |                                              |                                           |                1 |              1 |
+|  disp3t1/label_reg_i_2__9_n_0          |                                              |                                           |                1 |              1 |
+|  disp2v1/label_reg_i_2__12_n_0         |                                              |                                           |                1 |              1 |
+|  disp2td/label_reg_i_2_n_0             |                                              |                                           |                1 |              1 |
+|  disp2t1/label_reg_i_2__1_n_0          |                                              |                                           |                1 |              1 |
+|  disp1t1/label_reg_i_2__0_n_0          |                                              |                                           |                1 |              1 |
+|  disp8t1/label_reg_i_2__4_n_0          |                                              |                                           |                1 |              1 |
+|  disp9t1/label_reg_i_2__5_n_0          |                                              |                                           |                1 |              1 |
+| ~VOLT_FACTOR_reg_n_0_[1]               |                                              |                                           |                1 |              1 |
+|  FSM2/nextstate_reg[1]_i_2__0_n_0      |                                              |                                           |                1 |              2 |
+|  FSM1/nextstate_reg[1]_i_2_n_0         |                                              |                                           |                1 |              2 |
+| ~CLK_IBUF_BUFG                         |                                              | t1d1[3]_i_1_n_0                           |                2 |              2 |
+| ~CLK_IBUF_BUFG                         |                                              | t1d4[3]_i_1_n_0                           |                3 |              4 |
+| ~CLK_IBUF_BUFG                         |                                              | t1d3[3]_i_1_n_0                           |                2 |              4 |
+| ~CLK_IBUF_BUFG                         |                                              | t1d2[3]_i_1_n_0                           |                3 |              4 |
+|  CLK_IBUF_BUFG                         |                                              | v1d2[3]_i_1_n_0                           |                2 |              4 |
+|  CLK_IBUF_BUFG                         |                                              | v1d1[3]_i_1_n_0                           |                3 |              4 |
+|  CLK_IBUF_BUFG                         |                                              | v1d3[3]_i_1_n_0                           |                2 |              4 |
+|  PIXEL_CLOCK_GENERATOR/U0/clk_out1     |                                              |                                           |                5 |              9 |
+|  CLK_SCROLL_BUFG                       | ADJUST_DEBOUNCER/SHIFT_HOR_REG_YELLOW_reg[0] |                                           |                3 |             12 |
+|  CLK_SCROLL_BUFG                       | FSM1/SHIFT_HOR_REG_GREEN_reg[11]_0           |                                           |                3 |             12 |
+|  CLK_SCROLL_BUFG                       | FSM2/SHIFT_VER_REG_GREEN_reg[0]_0            |                                           |                3 |             12 |
+|  CLK_SCROLL_BUFG                       | FSM2/SHIFT_VER_REG_YELLOW_reg[0]_0           |                                           |                3 |             12 |
+| ~CLK_IBUF_BUFG                         |                                              |                                           |               11 |             17 |
+|  PIXEL_CLOCK_GENERATOR/U0/clk_out1     | VGA_CONTROLLER/eqOp2_in                      | VGA_CONTROLLER/v_cntr_reg0                |                6 |             17 |
+|  PIXEL_CLOCK_GENERATOR/U0/clk_out1     |                                              | VGA_CONTROLLER/eqOp2_in                   |                6 |             20 |
+|  CLK_IBUF_BUFG                         |                                              | BTNU_DEBOUNCER/counter[0]_i_1__8_n_0      |                6 |             24 |
+|  CLK_IBUF_BUFG                         |                                              | BTND_DEBOUNCER/counter[0]_i_1__7_n_0      |                6 |             24 |
+|  CLK_IBUF_BUFG                         |                                              | CURSOR/counter[0]_i_1__6_n_0              |                6 |             24 |
+|  CLK_IBUF_BUFG                         |                                              | CURSOR2/counter[0]_i_1__1_n_0             |                6 |             24 |
+|  CLK_IBUF_BUFG                         |                                              | TRIG_TYPE_DEBOUNCER/counter[0]_i_1__2_n_0 |                6 |             24 |
+|  CLK_IBUF_BUFG                         |                                              | TRIG_DEBOUNCER/counter[0]_i_1__3_n_0      |                6 |             24 |
+|  CLK_IBUF_BUFG                         |                                              | CURSOR1/counter[0]_i_1__4_n_0             |                6 |             24 |
+|  CLK_IBUF_BUFG                         |                                              | ADJUST_DEBOUNCER/counter[0]_i_1__5_n_0    |                6 |             24 |
+|  CLK_IBUF_BUFG                         |                                              | BTNL_DEBOUNCER/counter[0]_i_1_n_0         |                6 |             24 |
+|  CLK_IBUF_BUFG                         |                                              | BTNR_DEBOUNCER/counter[0]_i_1__0_n_0      |                6 |             24 |
+|  CLK_IBUF_BUFG                         |                                              |                                           |               48 |            136 |
+|  CLK_SUBSAMPLE_BUFG                    |                                              |                                           |              435 |           1280 |
+|  CLK_SUBSAMPLE_BUFG                    | TRIG_DEBOUNCER/p_68_out                      |                                           |              475 |           1280 |
++----------------------------------------+----------------------------------------------+-------------------------------------------+------------------+----------------+
+
+

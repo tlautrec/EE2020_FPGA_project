@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Oct 20 14:34:39 2015
+# Process ID: 4328
+# Log file: F:/project/vivado.log
+# Journal file: F:/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/project/project.xpr
+INFO: [Project 1-313] Project file moved from 'D:/MyWork/project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Labsoft/Xilinx/Vivado/2015.2/data/ip'.
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/ADC_sampler.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/ADC_sampler.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/clock_divider.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/clock_divider.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/switch_debouncer.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/switch_debouncer.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/xadc_wiz_0.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/xadc_wiz_0.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "F:/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd" into library xil_defaultlib [F:/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "F:/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd" into library xil_defaultlib [F:/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "F:/project/project.srcs/sources_1/imports/skeleton_sources/vga_ctrl.vhd" into library xil_defaultlib [F:/project/project.srcs/sources_1/imports/skeleton_sources/vga_ctrl.vhd:1]
+[Tue Oct 20 14:38:24 2015] Launched synth_1...
+Run output will be captured here: F:/project/project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/ADC_sampler.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/ADC_sampler.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/clock_divider.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/clock_divider.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/switch_debouncer.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/switch_debouncer.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/project/project.srcs/sources_1/imports/skeleton_sources/xadc_wiz_0.v" into library work [F:/project/project.srcs/sources_1/imports/skeleton_sources/xadc_wiz_0.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "F:/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd" into library xil_defaultlib [F:/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "F:/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd" into library xil_defaultlib [F:/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "F:/project/project.srcs/sources_1/imports/skeleton_sources/vga_ctrl.vhd" into library xil_defaultlib [F:/project/project.srcs/sources_1/imports/skeleton_sources/vga_ctrl.vhd:1]
+[Tue Oct 20 14:38:51 2015] Launched synth_1...
+Run output will be captured here: F:/project/project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Tue Oct 20 14:39:57 2015] Launched synth_1...
+Run output will be captured here: F:/project/project.runs/synth_1/runme.log
+[Tue Oct 20 14:39:57 2015] Launched impl_1...
+Run output will be captured here: F:/project/project.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 20 14:42:24 2015] Launched impl_1...
+Run output will be captured here: F:/project/project.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/project/project.hw/webtalk/labtool_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3519514281 -regid "176154952_0_0_979" -xml F:/project/project.hw/webtalk/usage_statistics_ext_labtool.xml -html F:/project/..."
+    (file "F:/project/project.hw/webtalk/labtool_webtalk.tcl" line 28)
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 20 14:43:38 2015...
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714053A
+set_property PROGRAM.FILE {F:/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].

@@ -1,0 +1,335 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Oct 21 01:35:06 2015
+# Process ID: 8204
+# Log file: C:/Users/CS/Desktop/project/vivado.log
+# Journal file: C:/Users/CS/Desktop/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/CS/Desktop/project/project.xpr
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top switch_debouncer [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_switch_debouncer [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source test_switch_debouncer.tcl
+add_wave {{/test_switch_debouncer/dut/counter}} 
+restart
+run all
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 ms
+run 10 ns
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+launch_simulation
+source test_switch_debouncer.tcl
+restart
+close_sim
+launch_simulation
+source test_switch_debouncer.tcl
+close_sim
+launch_simulation
+source test_switch_debouncer.tcl
+close_sim
+launch_simulation
+source test_switch_debouncer.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SCOPE_TOP [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+file mkdir C:/Users/CS/Desktop/project/project.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/CS/Desktop/project/project.srcs/sim_1/new/test_fsm.v w ]
+add_files -fileset sim_1 C:/Users/CS/Desktop/project/project.srcs/sim_1/new/test_fsm.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FSM_inc_dec [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_fsm [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source test_fsm.tcl
+add_wave {{/test_fsm/dut/state}} 
+add_wave {{/test_fsm/dut/nextstate}} 
+restart
+run 300 ns
+close_sim
+launch_simulation
+source test_fsm.tcl
+add_wave {{/test_fsm/dut/state}} 
+add_wave {{/test_fsm/dut/nextstate}} 
+restart
+run 300 ns
+close_sim
+launch_simulation
+source test_fsm.tcl
+add_wave {{/test_fsm/dut/state}} 
+add_wave {{/test_fsm/dut/nextstate}} 
+restart
+run 300 ns
+close_sim
+launch_simulation
+source test_fsm.tcl
+add_wave {{/test_fsm/dut/state}} 
+add_wave {{/test_fsm/dut/nextstate}} 
+restart
+run 400 ns
+close_sim
+launch_simulation
+source test_fsm.tcl
+close_sim
+launch_simulation
+source test_fsm.tcl
+add_wave {{/test_fsm/dut/state}} 
+add_wave {{/test_fsm/dut/nextstate}} 
+restart
+run 400 ns
+close_sim
+launch_simulation
+source test_fsm.tcl
+add_wave {{/test_fsm/dut/state}} 
+add_wave {{/test_fsm/dut/nextstate}} 
+restart
+run 400 ns
+close_sim
+launch_simulation
+source test_fsm.tcl
+close_sim
+launch_simulation
+source test_fsm.tcl
+close_sim
+launch_simulation
+source test_fsm.tcl
+add_wave {{/test_fsm/dut/nextstate}} 
+add_wave {{/test_fsm/dut/state}} 
+restart
+run 500 ns
+close_sim
+launch_simulation
+source test_fsm.tcl
+close_sim
+launch_simulation
+source test_fsm.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source test_fsm.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SCOPE_TOP [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top switch_debouncer [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_switch_debouncer [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source test_switch_debouncer.tcl
+add_wave {{/test_switch_debouncer/dut/BTN_cnt}} 
+close_sim
+launch_simulation
+launch_simulation
+source test_switch_debouncer.tcl
+restart
+run 500 ns
+close_sim
+launch_simulation
+source test_switch_debouncer.tcl
+close_sim
+launch_simulation
+source test_switch_debouncer.tcl
+add_wave {{/test_switch_debouncer/dut/stable}} 
+run all
+restart
+run 1000 ns
+close_sim
+launch_simulation
+launch_simulation
+source test_switch_debouncer.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SCOPE_TOP [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183714053A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw_target
+close_hw

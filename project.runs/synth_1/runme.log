@@ -1,0 +1,687 @@
+
+*** Running vivado
+    with args -log SCOPE_TOP.vds -m64 -mode batch -messageDb vivado.pb -notrace -source SCOPE_TOP.tcl
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source SCOPE_TOP.tcl -notrace
+Command: synth_design -top SCOPE_TOP -part xc7a35tcpg236-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/switch_debouncer.v:44]
+WARNING: [Synth 8-2292] literal value truncated to fit in 4 bits [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:647]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 249.008 ; gain = 72.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SCOPE_TOP' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd:83]
+INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at 'C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:74' bound to instance 'U0' of component 'clk_wiz_0_clk_wiz' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:83]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.125000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 9.375000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:125]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:187]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:194]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (1#1) [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'vga_ctrl' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/vga_ctrl.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'vga_ctrl' (3#1) [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/vga_ctrl.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clock_divider.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (4#1) [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'switch_debouncer' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/switch_debouncer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'switch_debouncer' (5#1) [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/switch_debouncer.v:23]
+INFO: [Synth 8-638] synthesizing module 'FSM_inc_dec' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:23]
+	Parameter S0 bound to: 2'b00 
+	Parameter S1 bound to: 2'b01 
+	Parameter S2 bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:49]
+INFO: [Synth 8-256] done synthesizing module 'FSM_inc_dec' (6#1) [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:23]
+INFO: [Synth 8-638] synthesizing module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/new/Display_conv.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/CS/Desktop/project/project.srcs/sources_1/new/Display_conv.v:37]
+WARNING: [Synth 8-567] referenced signal 'vc' should be on the sensitivity list [C:/Users/CS/Desktop/project/project.srcs/sources_1/new/Display_conv.v:36]
+WARNING: [Synth 8-567] referenced signal 'vs' should be on the sensitivity list [C:/Users/CS/Desktop/project/project.srcs/sources_1/new/Display_conv.v:36]
+WARNING: [Synth 8-567] referenced signal 'hc' should be on the sensitivity list [C:/Users/CS/Desktop/project/project.srcs/sources_1/new/Display_conv.v:36]
+WARNING: [Synth 8-567] referenced signal 'hs' should be on the sensitivity list [C:/Users/CS/Desktop/project/project.srcs/sources_1/new/Display_conv.v:36]
+INFO: [Synth 8-256] done synthesizing module 'Display_conv' (7#1) [C:/Users/CS/Desktop/project/project.srcs/sources_1/new/Display_conv.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:510]
+WARNING: [Synth 8-689] width (4) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:511]
+WARNING: [Synth 8-689] width (4) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:512]
+WARNING: [Synth 8-689] width (4) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:513]
+WARNING: [Synth 8-689] width (4) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:515]
+WARNING: [Synth 8-689] width (4) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:516]
+WARNING: [Synth 8-689] width (4) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:517]
+WARNING: [Synth 8-689] width (28) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:586]
+WARNING: [Synth 8-689] width (28) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:587]
+WARNING: [Synth 8-689] width (28) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:588]
+WARNING: [Synth 8-689] width (28) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:589]
+WARNING: [Synth 8-689] width (28) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:590]
+WARNING: [Synth 8-689] width (28) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:592]
+WARNING: [Synth 8-689] width (28) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:593]
+WARNING: [Synth 8-689] width (28) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:594]
+WARNING: [Synth 8-689] width (16) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:625]
+WARNING: [Synth 8-689] width (16) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:626]
+WARNING: [Synth 8-689] width (16) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:627]
+WARNING: [Synth 8-689] width (16) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:628]
+WARNING: [Synth 8-689] width (16) of port connection 'digit' does not match port width (5) of module 'Display_conv' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:630]
+INFO: [Synth 8-256] done synthesizing module 'SCOPE_TOP' (8#1) [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:23]
+WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port ADC_IN_P
+WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port ADC_IN_N
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 318.895 ; gain = 142.727
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 318.895 ; gain = 142.727
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/CS/Desktop/project/project.srcs/constrs_1/imports/skeleton_sources/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/CS/Desktop/project/project.srcs/constrs_1/imports/skeleton_sources/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-2] Deriving generated clocks
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.906 . Memory (MB): peak = 648.984 ; gain = 0.004
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 648.984 ; gain = 472.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 648.984 ; gain = 472.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 648.984 ; gain = 472.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/clock_divider.v:39]
+INFO: [Synth 8-5545] ROM "stable" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+INFO: [Synth 8-5544] ROM "ctrl" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:545]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:545]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <unary minus> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:545]
+WARNING: [Synth 8-327] inferring latch for variable 'nextstate_reg' [C:/Users/CS/Desktop/project/project.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'label_reg' [C:/Users/CS/Desktop/project/project.srcs/sources_1/new/Display_conv.v:38]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:36 ; elapsed = 00:02:43 . Memory (MB): peak = 648.984 ; gain = 472.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |Display_conv    |          31|      3409|
+|2     |SCOPE_TOP__GCB0 |           1|     18791|
+|3     |SCOPE_TOP__GCB1 |           1|     13315|
+|4     |SCOPE_TOP__GCB2 |           1|     13435|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 31    
+	   3 Input     32 Bit       Adders := 2     
+	   3 Input     28 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 93    
+	   2 Input     13 Bit       Adders := 527   
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      2 Bit         XORs := 2     
++---Registers : 
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 2579  
++---Multipliers : 
+	                14x32  Multipliers := 2     
++---Muxes : 
+	   8 Input     19 Bit        Muxes := 1     
+	   8 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 8     
+	   8 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	  17 Input      1 Bit        Muxes := 62    
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SCOPE_TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   3 Input     28 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2564  
++---Multipliers : 
+	                14x32  Multipliers := 2     
++---Muxes : 
+	   8 Input     19 Bit        Muxes := 1     
+	   8 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 8     
+	   8 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+Module Display_conv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 17    
++---Muxes : 
+	  17 Input      1 Bit        Muxes := 2     
+Module vga_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module clock_divider__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module switch_debouncer__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module switch_debouncer__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module switch_debouncer__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module FSM_inc_dec__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module switch_debouncer__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module switch_debouncer__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_divider__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module FSM_inc_dec 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module switch_debouncer__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module switch_debouncer__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module switch_debouncer__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module switch_debouncer__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module switch_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:39 ; elapsed = 00:02:46 . Memory (MB): peak = 648.984 ; gain = 472.816
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "stable" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "stable" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "stable" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+INFO: [Synth 8-5545] ROM "stable" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "stable" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "stable" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "stable" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "stable" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "stable" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "stable" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port ADC_IN_P
+WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port ADC_IN_N
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:12:29 ; elapsed = 00:12:43 . Memory (MB): peak = 648.984 ; gain = 472.816
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:12:29 ; elapsed = 00:12:43 . Memory (MB): peak = 648.984 ; gain = 472.816
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |Display_conv    |          31|      3409|
+|2     |SCOPE_TOP__GCB0 |           1|     25167|
+|3     |SCOPE_TOP__GCB1 |           1|     13315|
+|4     |SCOPE_TOP__GCB2 |           1|     14398|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|SCOPE_TOP   | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|SCOPE_TOP   | (PCIN>>17)+A*B | No           | 11     | 11     | 11     | 25     | 11     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__2.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__3.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__6.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__7.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__8.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__9.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__15.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__19.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__20.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__21.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__22.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__27.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__29.
+WARNING: [Synth 8-3332] Sequential element (label_reg) is unused and will be removed from module Display_conv__30.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\v1d3_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\v1d1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\LOAD_VALUE_SUBSAMPLE_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\t1d1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\t1d4_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\v1d2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\t1d2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\t1d3_reg[4] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:15:44 ; elapsed = 00:16:05 . Memory (MB): peak = 829.809 ; gain = 653.641
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:15:44 ; elapsed = 00:16:05 . Memory (MB): peak = 829.809 ; gain = 653.641
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Display_conv     |           1|      1119|
+|2     |SCOPE_TOP__GCB0  |           1|     10751|
+|3     |SCOPE_TOP__GCB1  |           1|      4190|
+|4     |SCOPE_TOP__GCB2  |           1|      5879|
+|5     |Display_conv__1  |           1|      1310|
+|6     |Display_conv__2  |           1|      1057|
+|7     |Display_conv__3  |           1|       961|
+|8     |Display_conv__4  |           1|      1238|
+|9     |Display_conv__5  |           1|      1311|
+|10    |Display_conv__6  |           1|      1142|
+|11    |Display_conv__7  |           1|       427|
+|12    |Display_conv__8  |           1|       473|
+|13    |Display_conv__9  |           1|       152|
+|14    |Display_conv__10 |           1|      1230|
+|15    |Display_conv__11 |           1|      1307|
+|16    |Display_conv__12 |           1|      1304|
+|17    |Display_conv__13 |           1|      1288|
+|18    |Display_conv__14 |           1|      1309|
+|19    |Display_conv__15 |           1|       153|
+|20    |Display_conv__16 |           1|      1309|
+|21    |Display_conv__17 |           1|      1310|
+|22    |Display_conv__18 |           1|      1312|
+|23    |Display_conv__19 |           1|       425|
+|24    |Display_conv__20 |           1|       456|
+|25    |Display_conv__21 |           1|       413|
+|26    |Display_conv__22 |           1|       152|
+|27    |Display_conv__23 |           1|      1288|
+|28    |Display_conv__24 |           1|      1293|
+|29    |Display_conv__25 |           1|      1305|
+|30    |Display_conv__26 |           1|      1309|
+|31    |Display_conv__27 |           1|       154|
+|32    |Display_conv__28 |           1|      1312|
+|33    |Display_conv__29 |           1|       425|
+|34    |Display_conv__30 |           1|       412|
++------+-----------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:15:44 ; elapsed = 00:16:05 . Memory (MB): peak = 829.809 ; gain = 653.641
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:16:47 ; elapsed = 00:17:09 . Memory (MB): peak = 981.195 ; gain = 805.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:16:57 ; elapsed = 00:17:19 . Memory (MB): peak = 996.371 ; gain = 820.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Display_conv     |           1|      1119|
+|2     |SCOPE_TOP__GCB0  |           1|     10751|
+|3     |SCOPE_TOP__GCB1  |           1|      4190|
+|4     |SCOPE_TOP__GCB2  |           1|      5879|
+|5     |Display_conv__1  |           1|      1310|
+|6     |Display_conv__2  |           1|      1057|
+|7     |Display_conv__3  |           1|       961|
+|8     |Display_conv__4  |           1|      1238|
+|9     |Display_conv__5  |           1|      1311|
+|10    |Display_conv__6  |           1|      1142|
+|11    |Display_conv__7  |           1|       427|
+|12    |Display_conv__8  |           1|       473|
+|13    |Display_conv__9  |           1|       152|
+|14    |Display_conv__10 |           1|      1230|
+|15    |Display_conv__11 |           1|      1307|
+|16    |Display_conv__12 |           1|      1304|
+|17    |Display_conv__13 |           1|      1288|
+|18    |Display_conv__14 |           1|      1309|
+|19    |Display_conv__15 |           1|       153|
+|20    |Display_conv__16 |           1|      1309|
+|21    |Display_conv__17 |           1|      1310|
+|22    |Display_conv__18 |           1|      1312|
+|23    |Display_conv__19 |           1|       425|
+|24    |Display_conv__20 |           1|       456|
+|25    |Display_conv__21 |           1|       413|
+|26    |Display_conv__22 |           1|       152|
+|27    |Display_conv__23 |           1|      1288|
+|28    |Display_conv__24 |           1|      1293|
+|29    |Display_conv__25 |           1|      1305|
+|30    |Display_conv__26 |           1|      1309|
+|31    |Display_conv__27 |           1|       154|
+|32    |Display_conv__28 |           1|      1312|
+|33    |Display_conv__29 |           1|       425|
+|34    |Display_conv__30 |           1|       412|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\disp2vd/label_reg ) is unused and will be removed from module SCOPE_TOP.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:18:27 ; elapsed = 00:18:57 . Memory (MB): peak = 1004.898 ; gain = 828.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:18:35 ; elapsed = 00:19:06 . Memory (MB): peak = 1004.898 ; gain = 828.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:18:36 ; elapsed = 00:19:06 . Memory (MB): peak = 1004.898 ; gain = 828.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:18:43 ; elapsed = 00:19:13 . Memory (MB): peak = 1004.898 ; gain = 828.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:18:43 ; elapsed = 00:19:13 . Memory (MB): peak = 1004.898 ; gain = 828.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:18:44 ; elapsed = 00:19:14 . Memory (MB): peak = 1004.898 ; gain = 828.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     5|
+|2     |CARRY4     |  4060|
+|3     |DSP48E1    |     2|
+|4     |LUT1       |  1058|
+|5     |LUT2       |  4021|
+|6     |LUT3       |  2084|
+|7     |LUT4       |  3892|
+|8     |LUT5       |   730|
+|9     |LUT6       |  3396|
+|10    |MMCME2_ADV |     1|
+|11    |MUXCY_L    |   377|
+|12    |MUXF7      |   197|
+|13    |MUXF8      |    84|
+|14    |XORCY      |   396|
+|15    |FDRE       |  3054|
+|16    |FDSE       |    20|
+|17    |LD         |    20|
+|18    |IBUF       |    11|
+|19    |OBUF       |    26|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------------+--------------------+------+
+|      |Instance                |Module              |Cells |
++------+------------------------+--------------------+------+
+|1     |top                     |                    | 23434|
+|2     |  ADJUST_DEBOUNCER      |switch_debouncer    |    80|
+|3     |  BTND_DEBOUNCER        |switch_debouncer_0  |    80|
+|4     |  BTNL_DEBOUNCER        |switch_debouncer_1  |    80|
+|5     |  BTNR_DEBOUNCER        |switch_debouncer_2  |    80|
+|6     |  BTNU_DEBOUNCER        |switch_debouncer_3  |    80|
+|7     |  CURSOR                |switch_debouncer_4  |    79|
+|8     |  CURSOR1               |switch_debouncer_5  |    79|
+|9     |  CURSOR2               |switch_debouncer_6  |    79|
+|10    |  FSM1                  |FSM_inc_dec         |    87|
+|11    |  FSM2                  |FSM_inc_dec_7       |    89|
+|12    |  GEN_CLK_SUBSAMPLE     |clock_divider       |   119|
+|13    |  GEN_CLK_SUBSAMPLE1    |clock_divider_8     |   118|
+|14    |  GEN_CLK_SYNTH_SQUARE  |clock_divider_9     |   118|
+|15    |  PIXEL_CLOCK_GENERATOR |clk_wiz_0           |     3|
+|16    |    U0                  |clk_wiz_0_clk_wiz   |     3|
+|17    |  TRIG_DEBOUNCER        |switch_debouncer_10 |    80|
+|18    |  TRIG_TYPE_DEBOUNCER   |switch_debouncer_11 |    79|
+|19    |  VGA_CONTROLLER        |vga_ctrl            | 10633|
+|20    |  disp1t1               |Display_conv        |    58|
+|21    |  disp1td               |Display_conv_12     |    59|
+|22    |  disp1v1               |Display_conv_13     |    67|
+|23    |  disp1vd               |Display_conv_14     |    57|
+|24    |  disp2t1               |Display_conv_15     |    74|
+|25    |  disp2td               |Display_conv_16     |    83|
+|26    |  disp2v1               |Display_conv_17     |    68|
+|27    |  disp3t1               |Display_conv_18     |    70|
+|28    |  disp3v1               |Display_conv_19     |    73|
+|29    |  disp4t1               |Display_conv_20     |    67|
+|30    |  disp4v1               |Display_conv_21     |    68|
+|31    |  disp5t1               |Display_conv_22     |    68|
+|32    |  disp6v1               |Display_conv_23     |    71|
+|33    |  disp7t1               |Display_conv_24     |    68|
+|34    |  disp8t1               |Display_conv_25     |    69|
+|35    |  disp9t1               |Display_conv_26     |    69|
++------+------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:18:45 ; elapsed = 00:19:16 . Memory (MB): peak = 1004.898 ; gain = 828.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:17:39 ; elapsed = 00:18:33 . Memory (MB): peak = 1004.898 ; gain = 486.773
+Synthesis Optimization Complete : Time (s): cpu = 00:18:46 ; elapsed = 00:19:17 . Memory (MB): peak = 1004.898 ; gain = 828.730
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4867 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 32 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 119 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 99 instances
+  LD => LDCE: 19 instances
+  LD => LDCE (inverted pins: G): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:19:07 ; elapsed = 00:19:38 . Memory (MB): peak = 1004.898 ; gain = 816.863
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1004.898 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1004.898 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 24 00:27:41 2015...
