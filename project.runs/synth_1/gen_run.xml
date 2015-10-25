@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1445616450">
-  <File Type="RDS-DCP" Name="SCOPE_TOP.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
-  <File Type="RDS-UTIL-PB" Name="SCOPE_TOP_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="SCOPE_TOP.dcp"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
-  <File Type="RDS-PROPCONSTRS" Name="SCOPE_TOP_drc_synth.rpt"/>
-  <File Type="PA-TCL" Name="SCOPE_TOP.tcl"/>
+  <File Type="RDS-UTIL-PB" Name="SCOPE_TOP_utilization_synth.pb"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="PA-TCL" Name="SCOPE_TOP.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="SCOPE_TOP_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="SCOPE_TOP.vds"/>
   <File Type="RDS-UTIL" Name="SCOPE_TOP_utilization_synth.rpt"/>
   <File Type="VDS-TIMINGSUMMARY" Name="SCOPE_TOP_timing_summary_synth.rpt"/>

@@ -2,9 +2,9 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Thu Oct 22 20:33:39 2015
-# Process ID: 6372
-# Log file: C:/Users/CS/Desktop/project/project.runs/impl_1/ADC_sampler.vdi
+# Start of session at: Sat Oct 24 00:27:46 2015
+# Process ID: 7516
+# Log file: C:/Users/CS/Desktop/project/project.runs/impl_1/SCOPE_TOP.vdi
 # Journal file: C:/Users/CS/Desktop/project/project.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source ADC_sampler.tcl -notrace
+source SCOPE_TOP.tcl -notrace
